@@ -17,4 +17,4 @@ Bir istifadəçi olaraq veb-məlumatları ilə əlinizdən gələni edə bilərs
 - &#9888; Məlumat elementlərinə URI təyin etməli və məlumatları necə təqdim edəcəyinizi düşünməlisiniz.
 - &#9888; Yenidən istifadə etmək üçün ya mövcud nümunələri tapmalı və ya özünüz yaratmalısınız.
 
-"Möhtəşəm! İndi internetdəki məlumatlardır. (Ən vacib) məlumat elementlərinin URI-si var və internetdə paylaşıla bilər. Məlumatların təqdim edilməsinin adi yolu RDF-dən istifadə etməkdir, lakin lazım olduqda Atom kimi digər formatları çevirmək / uyğunlaşdırmaq mümkündür."
+"Möhtəşəm! İndi internetdəki məlumatlardır. (Ən vacib) məlumat elementlərinin URI-si var və internetdə paylaşıla bilər. Məlumatların təqdim edilməsinin adi yolu RDF-dən istifadə etməkdir, lakin lazım olduqda atom kimi digər formatları çevirmək / uyğunlaşdırmaq mümkündür."
