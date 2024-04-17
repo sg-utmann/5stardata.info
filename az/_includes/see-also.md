@@ -1,0 +1,4 @@
+- Ed Summers əsas götürdüyümüz 5 ulduzlu sxemin bariz nümunəsini təqdim etdi.
+- Açıq məlumatlarınız varsa, uyğunluq səviyyənizi qeyd etmək üçün ulduzlardan istifadə edə bilərsiniz.
+- Kristofer Qutteric proqramçılar üçün əlaqəli məlumatlar kursu malikdir.(http://openorg.ecs.soton.ac.uk/wiki/Linked_Data_Basics_for_Techies).
+- Açıq məlumat İnstitutu açıq məlumat sertifikatı ilə belə məlumatlarınızı təsdiqləməyə kömək edir.(https://certificates.theodi.org/).
