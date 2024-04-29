@@ -37,6 +37,9 @@ languages:
   -
     - zh-TW
     - 繁體中文
+  -
+    - az
+    - Azərbaycanca
 
 # Plug-ins
 gems:
