@@ -1,0 +1,3 @@
+[Tim Berners-Lee](http://www.w3.org/People/Berners-Lee/card#i), uppfinnaren av initiativtagaren till webben och länkade data, föreslog ett [5-stjärnigt distributionsschema](http: //www.w3.org/DesignIssues/LinkedData.html) för Open Data Här ger vi exempel för varje steg av stjärnorna och förklarar kostnader och fördelar som följer med det.
+
+![5-stjärniga steg för exempel]({{ "/images/5-star-steps.png" | prepend: site.baseurl }})

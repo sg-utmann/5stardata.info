@@ -1,0 +1,112 @@
+---
+redirect_from:
+- /en/examples/gtd-5.html
+- /gtd-5.html
+lang: en
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:xsd ="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:meteo="http://purl.org/ns/meteo#">
+<head>
+	<title>Temperature forecast for Galway, Ireland</title>
+  <link type="text/css" href="{{ "/css/style.css" | prepend: site.baseurl }}" rel="stylesheet" />
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="{{ "/scripts/data-highlight.js" | prepend: site.baseurl }}"></script>
+</head>
+<body>
+<div>
+	<button id="show-data">Visa inbäddade data</button>
+	<div id="hint">
+		<p> För att se inbäddad data kodad i <a href="http://rdfa.info/">RDFa</a>, håll muspekaren över de rödprickade områdena.
+            Du kan också <a href="http://graphite.ecs.soton.ac.uk/browser/?uri={{ page.url | prepend: site.baseurl | prepend: site.url }}">visa data externt</a> i Graphite Browser eller andra verktyg.
+		</p>
+		<p>
+            I det här 5-stjärniga exemplet använde vi <a href="http://purl.org/ns/meteo#">Meteo</a>-ordförrådet för att representera temperaturprognoserna.
+            Varje prognos har en URI (till exempel '<a href="#forecast20101115">prognos för måndagen den 15 november 2010</a>'), som kan användas i ett annat sammanhang.
+            Dessutom, genom att länka platsen (<code>#Galway</code>) till DBpedia-posten <a href="http://dbpedia.org/resource/Galway">Galway</a>,
+            så småningom har vi disambiguerat det för tolkningen av <code>#temp</code> genom de respektive skrivna länkarna till DBpedia (<a href="http://dbpedia.org/resource/Temperature">Temperature. </a> och <a href="http://dbpedia.org/resource/Celsius">Celsius</a>).
+		</p>
+	</div>
+</div>
+<h1 property="dcterms:title">Temperaturprognos för Galway, Irland</h1>
+	
+<div id="data" about="#Galway" typeof="meteo:Place">
+<span rel="owl:sameAs" resource="http://dbpedia.org/resource/Galway"></span>
+<table border="1px">
+	<tr>
+		<th>Day</th>
+		<th>
+			<div about="#temp">
+				Lowest 
+				<a rel="rdfs:seeAlso" href="http://en.wikipedia.org/wiki/Temperature" resource="http://dbpedia.org/resource/Temperature">Temperatur</a>
+				(<span rel="owl:sameAs" resource="http://dbpedia.org/resource/Celsius">&deg;C</span>)
+			</div>
+		</th>
+	</tr>
+	<tr rel="meteo:forecast" resource="#forecast20101113">
+		<td>
+			<div about="#forecast20101113">
+				<span property="meteo:predicted" content="2010-11-13T00:00:00Z" datatype="xsd:dateTime">Lördag, 13 November 2010</span>
+			</div>
+		</td>
+		<td rel="meteo:temperature">
+			<div about="#temp20101113">
+				<span property="meteo:celsius" datatype="xsd:decimal">2</span>
+			</div>
+		</td>
+	</tr>
+	<tr rel="meteo:forecast" resource="#forecast20101114">
+		<td>
+			<div about="#forecast20101114">
+				<span property="meteo:predicted" content="2010-11-14T00:00:00Z" datatype="xsd:dateTime">Söndag, 14 November 2010</span>
+			</div>
+		</td>
+		<td rel="meteo:temperature">
+			<div about="#temp20101114">
+				<span property="meteo:celsius" datatype="xsd:decimal">4</span>
+			</div>
+		</td>
+	</tr>
+	<tr rel="meteo:forecast" resource="#forecast20101115">
+		<td>
+			<div about="#forecast20101115">
+				<span property="meteo:predicted" content="2010-11-15T00:00:00Z" datatype="xsd:dateTime">Måndag, 15 November 2010</span>
+			</div>
+		</td>
+		<td rel="meteo:temperature">
+			<div about="#temp20101115">
+				<span property="meteo:celsius" datatype="xsd:decimal">7</span>
+			</div>
+		</td>
+	</tr>
+</table>
+</div>
+	
+<pre id="data-out"></pre>
+
+<div id="footer">
+  <span>
+    Skapad: <span property="dcterms:created" datatype="xsd:date">2012-01-22</span> by <a rel="dcterms:creator" href="http://mhausenblas.info/#i">Michael</a> |
+  </span>
+  <span>
+    Senast uppdaterad: <span property="dcterms:modified" datatype="xsd:date">2015-08-31</span> by <a href="http://jayg.me/" rel="dcterms:contributor">James</a> |
+  </span>
+  <span>
+    Kod tillgänglig på <a href="https://github.com/mhausenblas/5stardata.info">GitHub</a>
+  </span>
+  <br />
+  <span>
+  	Om inget annat anges är innehållet på denna webbplats fritt tillgängligt under <a rel="dcterms:license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain Dedication</a>.
+  </span>
+</div>
+</body>
+</html>
+
+
+
